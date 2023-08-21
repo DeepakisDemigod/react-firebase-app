@@ -1,1 +1,14 @@
+.enter-room {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
 
+.sign-out {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 5px;
+}

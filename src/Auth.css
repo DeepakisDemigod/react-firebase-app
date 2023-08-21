@@ -1,0 +1,31 @@
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.sign-in-button {
+  display: flex;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+.google-logo {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.continue-to {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

@@ -1,4 +1,5 @@
 import { useState, useRef } from "react"
+import "./App.css"
 import { Auth } from './components/Auth'
 import Cookies from "universal-cookie"
 import { Chat } from "./components/Chat"
@@ -29,7 +30,11 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="enter-room">
+      <div className="sign-out">
+        <button onClick={signUserOut}>Sign Out</button>
+      </div>
+
       {room ? (
         <Chat room={room} />
       ) : (
@@ -41,9 +46,6 @@ function App() {
           </button>
         </div>
       )}
-      <div className="sign-out">
-        <button onClick={signUserOut}>Sign Out</button>
-      </div>
     </div>
   );
 }

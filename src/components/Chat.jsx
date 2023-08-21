@@ -41,12 +41,12 @@ export const Chat = (props) => {
 
   return (
     <div>
-      <h1>you are in {room} room</h1>
+      <h1>you're in /{room} room!</h1>
       <div>
         {messages.map((message) => (
-          <div key={message.id}>
-            <span className="user">{message.user}: </span>
-            {message.text}
+          <div className="message-leaf" key={message.id}>
+            <span className="user">{message.user}</span>
+            <p>{message.text}</p>
           </div>
         ))}
       </div>
