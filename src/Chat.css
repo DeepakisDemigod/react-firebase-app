@@ -5,6 +5,26 @@ form {
   justify-content: space-around;
 }
 
+.which-room {
+  margin-top: 150px;
+  position: relative;
+}
+
+.messages-content {
+  height: 96vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.messages-content::-webkit-scrollbar {
+  display: none;
+}
+
+
+.message-parent-leaf {
+  display: flex;
+}
+
 .message-leaf {
   background: rgba(22,31,39,255);
   display: flex;
@@ -15,6 +35,7 @@ form {
   height: fit-content;
   width: fit-content;
 }
+
 
 .message-leaf span {
   font-size: 10px;
@@ -29,4 +50,5 @@ form {
   font-size: 14px;
   padding: 0px 0px 0px 5px;
   margin-top: 0;
+  max-width: 310px;
 }

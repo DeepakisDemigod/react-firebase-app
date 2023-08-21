@@ -32,6 +32,10 @@ function App() {
   return (
     <div className="enter-room">
       <div className="sign-out">
+        <h4 className="user-info">
+          <img src={auth.currentUser.photoURL} alt="user-profile" className="user-profile" />
+          <span>{auth.currentUser.email}</span>
+        </h4>
         <button onClick={signUserOut}>Sign Out</button>
       </div>
 
